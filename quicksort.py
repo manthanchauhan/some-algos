@@ -12,7 +12,6 @@ def pivot(vec, beg, end):
 def quick_sort(vec, beg, end):
     if end-beg <= 1:
         return vec
-    print(beg, end)
     p = pivot(vec, beg, end)
     quick_sort(vec, beg, p)
     quick_sort(vec, p+1, end)
